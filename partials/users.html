@@ -1,0 +1,23 @@
+<a ui-sref="home" class="btn-primary btn-lg nodecoration">home</a>
+<table class="table-striped">
+   
+        <h3>All Users</h3>
+  <tr>
+  <th style="width: 30px"><h4 style="color:#264d00">ID</h4></th>
+  <th><h4 style="color:#264d00">NAME</h4></th>
+  <th style="width: 200px"><h4 style="color:#264d00">EMAIL</h4></th>
+  <th><h4 style="color:#264d00">PHONE</h4></th>
+  
+  </tr>
+    <tr ng-repeat="p in post" >
+        <td>{{p.id}}</td>
+        <td>{{p.name}}</td>
+        <td>{{p.email}}</td>
+        <td style="width: 200px">{{p.phone}}</td>
+        <td>
+            <a class=" btn-primary" ui-sref="viewuser ({id:p.id})">View</a>
+            <a class=" btn-primary" ui-sref="edituser ({id:p.id})">Edit</a>
+            <a class="btn btn-danger" ng-click="deleteUser(p.id)" >Delete</a>
+        </td>
+    </tr>
+</table>
