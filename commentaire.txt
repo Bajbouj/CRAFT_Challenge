@@ -1,0 +1,8 @@
+Dans ce projet, j' ai utilisé bootstrap pour sturturé ma page.
+Cette page est responsive pour les écrans moyens (col-md)
+Mon cv est divisé par row en utilisant la classe row de bootstrap
+Chaque row est divisé sur 12 colonnes grace à la classe col-md-*
+Dans le fichier /css/app.css, j'ai définit mon stylesheet
+Dans le fichier /js/app.js, j'ai définit mon module et mon controlleur
+Dans le dossier font, j'ai définit mon font afin de récupérer les fonts de mon progressbar.
+Les paragraphes sont animées quand on met le curseur sur elles (animation proprety)
